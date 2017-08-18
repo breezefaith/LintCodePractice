@@ -1,4 +1,4 @@
-package AB无算术运算符求和问题;
+package AB脦脼脣茫脢玫脭脣脣茫路没脟贸潞脥脦脢脤芒;
 
 public class Solution {
 
@@ -14,31 +14,19 @@ public class Solution {
 	 * @param b
 	 * @return
 	 * @note
-	 * 若c<0，则~(c^1)=|c|
+	 * 脠么c<0拢卢脭貌~(c^1)=|c|
 	 */
 	public int aplusb(int a, int b) {
-		if((a>>31&1)==1&&(b>>31&1)==1) {
-			//均为负数
-			System.out.println("a<0,b<0");
-			int absA=~(a^1);
-			int absB=~(b^1);
-			System.out.println(absA+" "+absB);
-			int result=(absA|absB);
-			System.out.println("result="+result);
-			return (result);
-		}else if((a>>31&1)==1&&(b>>31&1)==0) {
-			//a负b正
-			System.out.println("a>0,b<0");
-			
-		}else if((a>>31&1)==0&&(b>>31&1)==1) {
-			//a正b负
-			System.out.println("a<0,b>0");
-			
-		}else {
-			//均为正数
-			System.out.println("a>0,b>0");
-			return a|b;
+		int sum=0;
+		int carray=0;
+		if(a==0) {
+			return b;
 		}
-		return a&b;
+		if(b==0) {
+			return a;
+		}
+		sum=a^b;
+		carray=(a&b)<<1;
+		return aplusb(sum,carray);
 	}
 }
