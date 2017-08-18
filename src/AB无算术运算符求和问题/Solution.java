@@ -1,12 +1,21 @@
-package AB无算术运算符求和问题;
+package AB脦脼脣茫脢玫脭脣脣茫路没脟贸潞脥脦脢脤芒;
 
 public class Solution {
 
 	public static void main(String[] args) {
-		int a=-1;
-		int b=-2;
+		int a=4;
+		int b=6;
+//		System.out.println(~((-c)^1)==c);
 		System.out.println(new Solution().aplusb(a, b));
 	}
+	/**
+	 * 
+	 * @param a
+	 * @param b
+	 * @return
+	 * @note
+	 * 脠么c<0拢卢脭貌~(c^1)=|c|
+	 */
 	public int aplusb(int a, int b) {
 		int sum=0;
 		int carray=0;
