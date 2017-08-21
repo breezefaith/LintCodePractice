@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/AB无算术运算符求和问题/Solution.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/不同的路径/Solution.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/不同的路径2/Solution.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/无算术运算符求和问题/Solution.java" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>
